@@ -1,0 +1,16 @@
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\bin\Debug\net5.0\ExceptionsWorking.exe
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\bin\Debug\net5.0\ExceptionsWorking.deps.json
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\bin\Debug\net5.0\ExceptionsWorking.runtimeconfig.json
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\bin\Debug\net5.0\ExceptionsWorking.runtimeconfig.dev.json
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\bin\Debug\net5.0\ExceptionsWorking.dll
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\bin\Debug\net5.0\ExceptionsWorking.pdb
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\ExceptionsWorking.csproj.AssemblyReference.cache
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\ExceptionsWorking.GeneratedMSBuildEditorConfig.editorconfig
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\ExceptionsWorking.AssemblyInfoInputs.cache
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\ExceptionsWorking.AssemblyInfo.cs
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\ExceptionsWorking.csproj.CoreCompileInputs.cache
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\ExceptionsWorking.dll
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\refint\ExceptionsWorking.dll
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\ExceptionsWorking.pdb
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\ExceptionsWorking.genruntimeconfig.cache
+D:\Dev\ExceptionsWorking\ExceptionsWorking\ExceptionsWorking\obj\Debug\net5.0\ref\ExceptionsWorking.dll
