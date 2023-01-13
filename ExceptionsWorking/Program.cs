@@ -11,12 +11,24 @@ namespace ExceptionsWorking
             //Todos os erros no dotnet são tratados como exceptions
             var arr = new int[3];
 
-            //System.IndexOutOfRangeException:
-            //Erro de exception ao executar propositalmente o código errado.
-            for (var index = 0; index < 10; index++)
+
+            //O bloco de código abaixo, irá tentar executar todo o código contido no seu corpo.
+            //Caso aconteça algum erro, a mensagem é exibida 
+            try
             {
-                Console.WriteLine(arr[index]);
+                //System.IndexOutOfRangeException:
+                //Erro de exception ao executar propositalmente o código errado.
+                for (var index = 0; index < 10; index++)
+                {
+                    Console.WriteLine(arr[index]);
+                }
             }
+            catch 
+            {
+
+                Console.WriteLine("Ops, algo deu errado!");
+            }
+            
         }
     }
 }
