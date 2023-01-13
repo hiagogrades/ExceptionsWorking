@@ -23,10 +23,14 @@ namespace ExceptionsWorking
                     Console.WriteLine(arr[index]);
                 }
             }
-            catch 
+            catch (Exception ex)
             {
-
                 Console.WriteLine("Ops, algo deu errado!");
+                
+                //Adiciona informações da exception
+                Console.WriteLine(ex.InnerException);
+                Console.WriteLine(ex.Message);
+
             }
             
         }
