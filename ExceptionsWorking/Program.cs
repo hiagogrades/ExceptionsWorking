@@ -30,7 +30,6 @@ namespace ExceptionsWorking
                 //Adiciona informações da exception
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine(ex.Message);
-
             }
             
         }
