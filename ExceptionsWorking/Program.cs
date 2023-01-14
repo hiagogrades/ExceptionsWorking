@@ -18,10 +18,20 @@ namespace ExceptionsWorking
             {
                 //System.IndexOutOfRangeException:
                 //Erro de exception ao executar propositalmente o código errado.
-                for (var index = 0; index < 10; index++)
-                {
-                    Console.WriteLine(arr[index]);
-                }
+                //for (var index = 0; index < 10; index++)
+                //{
+                //    Console.WriteLine(arr[index]);
+                //}
+
+                //Simulando um erro com o método Cadastrar
+                //Desta forma o sistema irá retornar uma exception pois o texto não pode ser nulo ou vazio.
+                Cadastrar("");
+            }
+            catch (ArgumentNullException ex) 
+            {
+                Console.WriteLine(ex.InnerException);
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Primeira exception");   
             }
             catch (IndexOutOfRangeException ex)
             {
@@ -31,13 +41,22 @@ namespace ExceptionsWorking
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Ops, algo deu errado!");
-                
                 //Adiciona informações da exception
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine(ex.Message);
+                Console.WriteLine("Ops, algo deu errado!");
             }
-            
+        }
+
+        private static void Cadastrar(string texto)
+        {
+            //Simula erro ao "cadastrar" um texto vazio
+            if(string.IsNullOrEmpty(texto))
+            {
+                //Throw = jogar, arremessar
+                //Arremessa uma nova exception
+                throw new Exception("O texto não pode ser nulo ou vazio");
+            }
         }
     }
 }
