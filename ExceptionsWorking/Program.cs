@@ -27,17 +27,17 @@ namespace ExceptionsWorking
                 //Desta forma o sistema irá retornar uma exception pois o texto não pode ser nulo ou vazio.
                 Cadastrar("");
             }
-            catch (ArgumentNullException ex) 
-            {
-                Console.WriteLine(ex.InnerException);
-                Console.WriteLine(ex.Message);
-                Console.WriteLine("Primeira exception");   
-            }
             catch (IndexOutOfRangeException ex)
             {
                 Console.WriteLine(ex.InnerException);
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Não encontrei o índice na lista");
+            }
+            catch (ArgumentNullException ex)
+            {
+                Console.WriteLine(ex.InnerException);
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Falha ao castrar o texto!");
             }
             catch (Exception ex)
             {
@@ -55,8 +55,10 @@ namespace ExceptionsWorking
             {
                 //Throw = jogar, arremessar
                 //Arremessa uma nova exception
-                throw new Exception("O texto não pode ser nulo ou vazio");
+                //Forma genérica de lançar uma exception genérica
+                //throw new Exception("O texto não pode ser nulo ou vazio");
 
+                throw new ArgumentNullException("O texto não pode ser nulo ou vazio.");
             }
         }
     }
