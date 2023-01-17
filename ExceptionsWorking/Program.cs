@@ -56,6 +56,7 @@ namespace ExceptionsWorking
                 //Throw = jogar, arremessar
                 //Arremessa uma nova exception
                 throw new Exception("O texto não pode ser nulo ou vazio");
+
             }
         }
     }
