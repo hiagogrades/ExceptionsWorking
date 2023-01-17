@@ -61,5 +61,11 @@ namespace ExceptionsWorking
                 throw new ArgumentNullException("O texto não pode ser nulo ou vazio.");
             }
         }
+
+        //Cria uma Exception personalizada herdando da Exception do "sistema"
+        public class MinhaException : Exception
+        {
+
+        }
     }
 }
