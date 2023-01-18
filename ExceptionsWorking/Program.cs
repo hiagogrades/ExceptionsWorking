@@ -52,6 +52,11 @@ namespace ExceptionsWorking
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Ops, algo deu errado!");
             }
+            //finalmente
+            finally
+            {
+                
+            }
         }
 
         private static void Cadastrar(string texto)
