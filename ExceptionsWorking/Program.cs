@@ -39,6 +39,12 @@ namespace ExceptionsWorking
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Falha ao castrar o texto!");
             }
+            catch (MinhaException ex)
+            {
+                Console.WriteLine(ex.InnerException);
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Exception Customizada");
+            }
             catch (Exception ex)
             {
                 //Adiciona informações da exception
@@ -58,14 +64,19 @@ namespace ExceptionsWorking
                 //Forma genérica de lançar uma exception genérica
                 //throw new Exception("O texto não pode ser nulo ou vazio");
 
-                throw new ArgumentNullException("O texto não pode ser nulo ou vazio.");
+                //throw new ArgumentNullException("O texto não pode ser nulo ou vazio.");
+                throw new MinhaException(DateTime.Now);
             }
         }
 
         //Cria uma Exception personalizada herdando da Exception do "sistema"
         public class MinhaException : Exception
         {
-
+            public MinhaException(DateTime date)
+            {
+                QuandoAconteceu = date;
+            }
+            public DateTime QuandoAconteceu { get; set; }
         }
     }
 }
